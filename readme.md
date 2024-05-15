@@ -58,6 +58,7 @@ operations using Express.js and MongoDB. It provides endpoints for managing user
 
 - PORT=3000
 - NODE_ENV=development
+- BASE_URL=http://localhost:3000
 
 #### You can register for a mongoDB Atlas account:
 Gon on MongoDB: [https://www.mongodb.com](https://www.mongodb.com). to register and learn about how to use mongoDB atlas to persist data on cloud. 
@@ -84,11 +85,11 @@ Mailtrap: [https://mailtrap.](https://mailtrap.io) to allow you received your em
 
 ## Endpoints The following endpoints are available: -
 
-**GET /users**: Retrieve all users. 
-**GET /users/:id**: Retrieve a user by ID. -
-**POST /users**: Create a new user. - 
-**PATCH /users/:id**: Update a specific user by ID. - 
-**DELETE /users/:id**: Delete a specific user by ID.
+**GET /api/v1/users**: Retrieve all users. 
+**GET /api/v1/users/:id**: Retrieve a user by ID. -
+**POST /api/v1/users**: Create a new user. - 
+**PATCH /api/v1/users/:id**: Update a specific user by ID. - 
+**DELETE /api/v1/users/:id**: Delete a specific user by ID.
     
 ## Request and Response Formats ### user Object A user object has the following properties:
 
@@ -99,22 +100,22 @@ Mailtrap: [https://mailtrap.](https://mailtrap.io) to allow you received your em
 -`passwordConfirm` (string): Confirm passwordr.
 -`photo` (string): The photo of the user. -   (e.g., "todo", "in-progress", "done").
 
-### GET /users **Request:** ``` GET /users ``` 
+### GET /api/v1/users **Request:** ``` GET /users ``` 
 
 **Response:** ``` Status: 200 OK Content-Type: application/json [ { "id": "1", "full name": "user 1", "email address": "email address of user 1", "status": "todo" }, { "id": "2", "full name": "user 2", "email address": "email address of user 2", "status": "in-progress" }, ... ] `
       ``
-### GET /users/:id **Request:** ``` GET /users/1 ```
+### GET /api/v1/users/:id **Request:** ``` GET /users/1 ```
 
 **Response:** ``` Status: 200 OK Content-Type: application/json { "id": "1", "full name": "user 1", "email address": "email address of user 1", "status": "todo" } ```
        
-### POST /users **Request:
+### POST /api/v1/users **Request:
 
 ** ``` POST /users Content-Type: application/json { "full name": "New user", "email address": "email address of New user", "status": "todo" } ``` **Response:** ``` Status: 201 Created Content-Type: application/json { "id": "3", "full name": "New user", "email address": "email address of New user", "status": "todo" } ```
 
-### PATCH /users/:id **Request:
+### PATCH /api/v1/users/:id **Request:
 ** ``` PATCH /users/1 Content-Type: application/json { "full name": "Updated user", "email address": "Updated email address", "status": "in-progress" } ``` **Response:** ``` Status: 200 OK Content-Type: application/json { "id": "1", "full name": "Updated user", "email address": "Updated email address", "status": "in-progress" } ```
  
-### DELETE /users/:id **Request:** ``` DELETE /users/1
+### DELETE /api/v1/users/:id **Request:** ``` DELETE /users/1
    ```**Response:** ``` 
    Status: 204 No Content ``` 
    
