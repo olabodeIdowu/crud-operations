@@ -3,10 +3,13 @@
 ### CRUD Operations
 #### Brief explanation of what this api documentatipn can do
 
+#### Authentication & Authorization:
 **Authenticate and authorize email and password using JWT (jason web token).This passwords are encrypted using bycrypt so as to prevent attacks on user data privacy. 
 
+#### Create account
 **Users can create account by sending a post requests on the usrt api route
 
+#### Update user profile
 **Also user can choose to update there profile information which can be to edit there email or full name and it also allow user to use features like
 
 A) Forgot Password
