@@ -12,21 +12,23 @@
 #### Update user profile
 **Also user can choose to update there profile information which can be to edit there email or full name and it also allow user to use features like
 
-A) Forgot Password
-B) Reset Password
+####Forgot Password
+####Reset Password
+####Edit photo
 
 **it also manages sending of emails to notify the users about there registration when they are been onboarded for the first time on the app.
 
+#### Delete user profile
 **User can also perform delete on an account, Built with MongoDB, Node.js, React, Express, and deployed on Heroku, this app provides a user-friendly interface and reliable cloud storage for your users.
 Features
 
-**user Management: Add, edit, and delete users to stay on top of your commitments.
-**Status Tracking: Mark users as complete or incomplete to monitor your progress.
-**Responsive Design: Enjoy a consistent experience across various devices and screen sizes.
-**Cloud Storage: users are stored securely in a MongoDB Atlas database, ensuring data persistence.
-**User Authentication: Register and log in securely to access your users from anywhere.
-**Real-time Updates: Any changes made to users are reflected in real time.
-**Customization: Categorize users with labels or tags for better organization.
+- user Management: Add, edit, and delete users to stay on top of your commitments.
+- Status Tracking: Mark users as complete or incomplete to monitor your progress.
+- Responsive Design: Enjoy a consistent experience across various devices and screen sizes.
+- Cloud Storage: users are stored securely in a MongoDB Atlas database, ensuring data persistence.
+- User Authentication: Register and log in securely to access your users from anywhere.
+- Real-time Updates: Any changes made to users are reflected in real time.
+- Customization: Categorize users with labels or tags for better organization.
 Technologies Used
 
 Backend: The server-side logic is handled by Node.js and Express, providing smooth communication between the frontend and database.
